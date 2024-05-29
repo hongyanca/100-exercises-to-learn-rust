@@ -5,10 +5,10 @@ pub fn factorial(n: u32) -> u32 {
     // suppressing type errors.
     // It panics at runtime.
     while n > 0 {
-        return n * factorial(n-1);
+        n * factorial(n-1)
     }
 
-    return 1;
+    1
 }
 
 #[cfg(test)]
